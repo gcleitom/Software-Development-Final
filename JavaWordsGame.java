@@ -12,7 +12,7 @@ public class JavaWordsGame{
 	private int P1NOLIVES;//number of lives the players will receive
 	private int P2NOLIVES;//number of lives the player 2 will receive
 	private int noGames; //input number of games the player wants to play
-	private Random randLetter;//generate random Letter;
+	private Random randLetter;//function to generate random Letters;
 	private char randChar;//Holds the random letter;
 	private String player1W;//input Player 1 words
 	private String player2W;//input Player 2 words
@@ -127,7 +127,7 @@ public class JavaWordsGame{
 		else{//when the player decide to stop the game or if the number of games are over.
 			arrayP1TotalPoints.add(p1Count);//add the result of the round to the final arrive
 			arrayP2TotalPoints.add(p2Count);
-			int totalAP1TPoints=0;
+			int totalAP1TPoints=0; //process and output - holds the total for the overall games
 			for(int i=0;i<arrayP1TotalPoints.size();i++){//run to calculate the amount of points stores in the array
 				totalAP1TPoints=totalAP1TPoints+arrayP1TotalPoints.get(i);
 			}
